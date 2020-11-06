@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang = "en-us"
+<head> 
+    <meta charset="utf-8">
+    <title>BirthData</title>
+    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+</head>
+<style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: white;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: white;
+        }
+        
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        </style>
+
+      
+<style>
+        .dropbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #3e8e41;
+        }
+        
+        .dropdown {
+          float: right;
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          right: 0;
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ddd;}
+        
+        .show {display: block;}
+        </style>
+        </head>
+        <!--<body>-->
+        <div class="topnav">
+                        <a class="active" href="index.html">Home</a>
+                      </div> 
+                <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Menu - Navigate to other pages</button>
+                        <div id="myDropdown" class="dropdown-content">
+                        <a href="YrHighLowBirths.html">Years with highest and lowest births</a>
+                          <a href="BirthMonth.html">Monthly Birth Trends</a>
+                          <a href="DailyAverage.html">Average daily births</a>
+                          <a href="DataPage.html">Data</a>
+                        </div>
+                      </div>
+
+                      <script>
+                            /* When the user clicks on the button, 
+                            toggle between hiding and showing the dropdown content */
+                            function myFunction() {
+                              document.getElementById("myDropdown").classList.toggle("show");
+                            }
+                            
+                            // Close the dropdown if the user clicks outside of it
+                            window.onclick = function(event) {
+                              if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                  var openDropdown = dropdowns[i];
+                                  if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                  }
+                                }
+                              }
+                            }
+                            </script>
+
+<body>
+    <h1 style = "color:green">US Birth Data for years 2000-2014</h1> 
+    <p>
+        The purpose of this project is to analyze number of births in USA during years 2000 to 2014. 
+
+        After loading the dataset from public repository, we used pandas to aggregate data for visualizations and used Plotly Java Script library to create visualizations. 
+        
+    </p> 
+    <p><h2 style = "color:green"> List of Visualizations for Birth Data Analysis </h2</p>
+    <p>
+        <a href="YrHighLowBirths.html">
+          Years with highest and lowest births
+        </a>
+    </p>
+    <p>
+        <a href="BirthMonth.html">
+            Monthly Trends of Births in each year
+        </a>
+       
+    </p>
+
+    <p>
+        <a href="DailyAverage.html">
+          Daily Average births
+        </a>
+      </p>
+    <p>
+      <a href="DataPage.html">
+        Project data - data used in the project
+      </a>
+      </p>
+
+</body>
+
+</html>

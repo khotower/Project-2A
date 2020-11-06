@@ -1,0 +1,7 @@
+https://plotly.com/javascript/
+
+Bar Chart: 
+https://plotly.com/javascript/bar-charts/
+
+Line Chart: 
+https://plotly.com/javascript/line-charts/

@@ -1,0 +1,1 @@
+var data2009 = [{month:"Jan",births:342975},{month:"Feb",births:321122},{month:"Mar",births:352571},{month:"Apr",births:341822},{month:"May",births:349831},{month:"Jun",births:351620},{month:"Jul",births:373491},{month:"Aug",births:364795},{month:"Sep",births:367694},{month:"Oct",births:353059},{month:"Nov",births:325247},{month:"Dec",births:346764}]
